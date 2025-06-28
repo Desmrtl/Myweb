@@ -1,9 +1,11 @@
+/* Reset dasar */
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
+/* Gaya dasar untuk body */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -12,13 +14,16 @@ body {
   padding: 20px;
 }
 
-header, footer {
+/* Header & Footer */
+header,
+footer {
   background-color: #333;
   color: white;
   padding: 15px;
   text-align: center;
 }
 
+/* Navigasi */
 nav ul {
   list-style: none;
   display: flex;
@@ -32,12 +37,14 @@ nav a {
   text-decoration: none;
 }
 
+/* Container layout dengan Flexbox */
 .container {
   display: flex;
   gap: 20px;
   margin-top: 20px;
 }
 
+/* Artikel utama */
 article {
   flex: 3;
   background-color: #fff;
@@ -45,6 +52,28 @@ article {
   border-radius: 10px;
 }
 
+/* Gaya heading dan paragraf di artikel */
+article h2,
+article h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+article p {
+  margin-bottom: 15px;
+}
+
+article ul,
+article ol {
+  margin-bottom: 15px;
+  padding-left: 20px;
+}
+
+article li {
+  margin-bottom: 8px;
+}
+
+/* Aside (profil/biodata) */
 aside {
   flex: 1;
   background-color: #eef;
@@ -58,6 +87,7 @@ aside img {
   margin-bottom: 10px;
 }
 
+/* Footer tambahan */
 footer {
   margin-top: 20px;
 }
